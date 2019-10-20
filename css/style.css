@@ -18,9 +18,7 @@ html{
 /*--- Navbar ---*/
 header{
     width           : 100%;
-    position        : fixed;
-    position        : fixed;
-    text-align      : right;
+    display         : flex;
     height          : 10vh;
     line-height     : 70px;
     background-color: white;
@@ -252,9 +250,9 @@ label{
 }
 
 .skill-first ul{
-   flex     : 2;
+ 
    display  : flex;
-   margin   :20px;
+  
    padding  : 20px;
 }
 
@@ -321,13 +319,14 @@ label{
  
 }
 .isi-works li{
+    
     list-style  : none;
     
 }
 .isi-works ul li img{
     width       : 484px;
     height      : 272px;
-    margin      : 20px 20px 20px 30px;
+    margin      : 20px 20px 20px 20px;
     border      : 9px solid white;
     box-shadow  : 4px 9px 10px #a09f9f;
     
@@ -670,6 +669,10 @@ label{
         margin-top      : 30px;
         
     }
+
+    .skill-first ul{
+        width: 80%;
+    }
     .skill-first ul li h2{
         font-size       : 16px;
     }
@@ -687,6 +690,9 @@ label{
     }
     .isi-works ul img{
         transform       : scale(0.7);
+    }
+    .isi-works ul li{
+        margin : 0;
     }
     .isi-works ul li img{
         margin          : 10px -1px 10px -1px;
