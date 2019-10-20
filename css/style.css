@@ -19,6 +19,7 @@ html{
 header{
     width           : 100%;
     position        : fixed;
+    position        : fixed;
     text-align      : right;
     height          : 10vh;
     line-height     : 70px;
