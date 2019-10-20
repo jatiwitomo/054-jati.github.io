@@ -19,6 +19,7 @@ html{
 header{
     width           : 100%;
     display         : flex;
+    position        : fixed;
     height          : 10vh;
     line-height     : 70px;
     background-color: white;
@@ -757,7 +758,7 @@ label{
 
 @media screen and (max-width:360px){
     .my-works h1{
-        text-align: center;
+        text-align  : center;
     }
     .isi-works li a img{
         width   : 225px;
