@@ -585,11 +585,9 @@ label{
 }
 
 @media screen and (max-width:700px){
-    /* html{
-        overflow-x  : hidden; 
-    } */
+
     body{
-        
+        overflow-x: hidden;
         font-family : 'Montserrat', sans-serif;
     }
 
