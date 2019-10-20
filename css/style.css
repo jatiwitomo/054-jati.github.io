@@ -251,26 +251,26 @@ label{
 
 .skill-first ul{
  
-   display  : flex;
-  
-   padding  : 20px;
+   display          : flex;
+   flex-direction   : column;
+   padding          : 10px;
 }
 
 .skill-first ul li{
-    margin-left : 25px;
     list-style  : none;
 }
 .skill-first ul li h2{
     font-size   : 28px;
     font-weight : bold;
     color       : #504658;
-
+    margin-bottom: -20px;
 }
 
 .skill-first li p{
     font-size   : 16px;
     font-weight : 400;
     color       : #8F8F8F;
+    margin-bottom: 20px;
 }
 
 /* --- Akhir Bagian My Skill --- */
@@ -645,8 +645,7 @@ label{
     }
 
     .my-skill{
-        flex-direction  : column;
-        flex            : 2;
+        flex-direction: column;
         
     }
     .my-skill br{
@@ -657,47 +656,53 @@ label{
         font-size   : 28px;
     }
     .isi-skill{
-        flex            : 1;
-        align-items     : flex-start;
-        height          : 5vh;
-        /* min-height: 65vh; */
-        justify-content : center;
-        align-content   : flex-start;
         text-align      : center;
-        margin-top      : 30px;
-        
+        margin-top      : 10px;   
     }
 
     .skill-first ul{
-        width: 80%;
+        display         : flex;
+        flex-direction  : column;
+    }
+    .skill-first ul li{
+        margin          : auto;
     }
     .skill-first ul li h2{
+        width           : 100%;
         font-size       : 16px;
+        margin-bottom: 0;
     }
     .skill-first ul li p{
         font-size       : 12px;
+        margin-bottom   : 30px;
     }
     .skill-first ul img{
-        transform       : scale(0.9);
+        transform       : scale(0.8);
     }
+
     .title-mw h1{
-        margin-top      : 3vh;
+        margin-top      : 30px;
     }   
+    .my-works{
+        min-height: 10vh;
+    }
     .my-works h1{
         font-size       : 28px;
     }
-    .isi-works ul img{
-        transform       : scale(0.7);
+    .isi-works ul li {
+        
+        align-items: center;
     }
-    .isi-works ul li{
-        margin : 0;
+    .isi-works li a img{
+        width: 325px;
     }
-    .isi-works ul li img{
+
+    .isi-works img{
         margin          : 10px -1px 10px -1px;
     }
     .isi-works ul li img:hover{
-        transform       : scale(0.8);
-        transition      : 0.3s ease-out;
+        transform       : scale(1.1);
+        transition      : 0.3s ease-in;
     }
     .box-motto{
         min-height      : 30vh;
@@ -747,6 +752,23 @@ label{
     }
     .cp{
         font-size       : 12px ;
+    }
+}
+
+@media screen and (max-width:360px){
+    .my-works h1{
+        text-align: center;
+    }
+    .isi-works li a img{
+        width   : 225px;
+        height  : 150px;
+    }
+    .isi-works img{
+        margin          : 10px -1px 10px -1px;
+    }
+    .isi-works ul li img:hover{
+        transform       : scale(1.1);
+        transition      : 0.3s ease-in;
     }
 }
 
